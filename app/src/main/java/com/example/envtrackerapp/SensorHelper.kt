@@ -1,5 +1,11 @@
 package com.example.envtrackerapp
 
+import android.content.Context
+import android.hardware.SensorEventListener
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorManager
+
 class SensorHelper(context: Context) : SensorEventListener {
     private val sensorManager = context.getSystemService(Context.SENSOR_SERVICE) as SensorManager
 
